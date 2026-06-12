@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Projects: anyone can read, only logged-in admin can write
+    match /projects/{id} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Skills: anyone can read, only logged-in admin can write
+    match /skills/{id} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Contact messages: anyone can submit (create), only admin can read/delete
+    match /contactMessages/{id} {
+      allow create: if true;
+      allow read, update, delete: if request.auth != null;
+    }
+  }
+}
