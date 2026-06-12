@@ -2,6 +2,7 @@
   "name": "vinay-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vinayyy39.github.io/vinayport",
   "dependencies": {
     "firebase": "^12.13.0",
     "html2canvas": "^1.4.1",
@@ -16,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -29,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
