@@ -1244,3 +1244,17 @@ header, .navbar, .nav-bar, .Navbar {
   background: radial-gradient(circle at center, rgba(10, 10, 10, 0.8) 0%, rgba(0, 0, 0, 0.95) 100%);
   /* The gradient above keeps text readable but lets rings peek through edges */
 }
+.contact-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.send-button {
+  align-self: flex-end; /* Pushes button to the right */
+}
