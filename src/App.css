@@ -1232,3 +1232,15 @@ header, .navbar, .nav-bar, .Navbar {
     transition-duration: 0.001s !important;
   }
 }
+/* OLD CODE (Hides the rings) */
+.hero {
+  background-color: #0a0a0a; /* <-- DELETE OR CHANGE THIS */
+  /* ... other styles ... */
+}
+
+/* NEW CODE (Allows rings to show through) */
+.hero {
+  background-color: transparent; /* Or use a very dark rgba */
+  background: radial-gradient(circle at center, rgba(10, 10, 10, 0.8) 0%, rgba(0, 0, 0, 0.95) 100%);
+  /* The gradient above keeps text readable but lets rings peek through edges */
+}

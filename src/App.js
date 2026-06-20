@@ -14,6 +14,7 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import MagicRings from './components/MagicRings';
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -110,6 +111,7 @@ function App() {
           {/* Portfolio Page */}
           <Route path="/" element={
             <>
+              <MagicRings />  
               <div id="home"><Hero /></div>
               <div id="about"><About /></div>
               <div id="skills"><Skills /></div>
