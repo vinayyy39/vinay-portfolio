@@ -10,7 +10,7 @@ const Home = () => {
       minHeight: '80vh',
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'cente  r',
       background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       color: 'white',
       padding: '50px 20px',

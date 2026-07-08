@@ -3,14 +3,14 @@ import { FaEnvelope, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
 import { db } from '../firebase'; // Make sure path is correct
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import './Contact.css'; 
-const Contact = () => {
-  const [formData, setFormData] = useState({
+const Contact = () => { 
+  const [formData, setFormData] = useState({ 
     name: '',
     email: '',
     subject: '',
     message: ''
   }); 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); 
   const [status, setStatus] = useState({ type: '', msg: '' });
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -28,10 +28,14 @@ const Contact = () => {
       });
       setStatus({ type: 'success', msg: 'Message sent successfully! I will get back to you soon.' });
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (err) {
+    } 
+    catch (err) 
+    {
       console.error("Error sending message: ", err);
       setStatus({ type: 'error', msg: 'Failed to send message. Please check your internet or Firebase rules.' });
-    } finally {
+    } 
+    finally 
+    {
       setLoading(false);
       setTimeout(() => setStatus({ type: '', msg: '' }), 5000);
     }

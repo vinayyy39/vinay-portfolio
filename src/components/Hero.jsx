@@ -50,7 +50,7 @@ const Hero = () => {
             </a>
           </div>
           <div className="hero-social">
-            <a href="https://github.com/vinayy876" target="_blank" rel="noopener noreferrer" className="social-link"><FaGithub /></a>
+            <a href="https://github.com/vinayyy39" target="_blank" rel="noopener noreferrer" className="social-link"><FaGithub /></a>
             <a href="https://app.netlify.com/teams/vinayy876/projects" target="_blank" rel="noopener noreferrer" className="social-link"><FaCloud /></a>
             <a href="https://dashboard.render.com/" target="_blank" rel="noopener noreferrer" className="social-link"><FaServer /></a>
             <a href="https://www.linkedin.com/in/vinay-sharma-35b683359/" target="_blank" rel="noopener noreferrer" className="social-link"><FaLinkedin /></a>
